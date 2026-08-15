@@ -3,7 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hexa-Programmer | Builder</title>
+    <title>Hexa-Programmer | Software Developer & Open Source Builder</title>
+    
+    <meta name="description" content="Portfolio of Hexa-Programmer, a software developer and open-source builder specializing in interactive experiments, web development, and software projects using Python, JavaScript, Swift, and Linux.">
+    <meta name="author" content="Hexa-Programmer">
+    <meta name="theme-color" content="#FDFDFD" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+
+    <meta property="og:title" content="Hexa-Programmer | Software Developer & Open Source Builder">
+    <meta property="og:description" content="Portfolio of Hexa-Programmer, a software developer and open-source builder specializing in interactive experiments, web development, and software projects using Python, JavaScript, Swift, and Linux.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hexaprogrammer.dev">
+    <meta property="og:image" content="https://hexaprogrammer.dev/logo.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hexa-Programmer | Software Developer & Open Source Builder">
+    <meta name="twitter:description" content="Portfolio of Hexa-Programmer, a software developer and open-source builder specializing in interactive experiments, web development, and software projects.">
+    <meta name="twitter:image" content="https://hexaprogrammer.dev/logo.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Hexa-Programmer",
+      "url": "https://hexaprogrammer.dev",
+      "jobTitle": "Software Developer",
+      "sameAs": [
+        "https://github.com/Hexa-Programmer"
+      ]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
@@ -11,8 +41,8 @@
 </head>
 <body>
     <header id="fixed-nav" class="fixed-nav">
-        <nav class="fixed-nav-container">
-            <a href="#hero" class="nav-logo-link" aria-label="Hexa-Programmer">
+        <nav class="fixed-nav-container" aria-label="Main Navigation">
+            <a href="#hero" class="nav-logo-link" aria-label="Navigate to top of page">
                 <img src="logo.png" alt="Hexa-Programmer Logo" class="nav-logo-img">
             </a>
             <div class="fixed-nav-links">
@@ -29,13 +59,13 @@
         <section id="hero" class="hero-section">
             <div class="hero-layout">
                 <div class="hero-left">
-                    <img src="logo.png" alt="Hexa-Programmer Logo" class="hero-logo">
+                    <img src="logo.png" alt="Hexa-Programmer Profile Picture" class="hero-logo">
                     <span class="hero-badge">Hexa-Programmer</span>
                     <h1 class="hero-title">Building software, experiments, and tools.</h1>
-                    <p class="hero-subtitle">A builder creating thoughtful software.</p>
+                    <p class="hero-subtitle">A software developer creating <em>thoughtful</em> programming projects.</p>
                 </div>
                 
-                <nav class="hero-nav-right">
+                <nav class="hero-nav-right" aria-label="Hero Navigation">
                     <a href="#about" class="nav-btn">About</a>
                     <a href="#projects" class="nav-btn">Projects</a>
                     <a href="#stack" class="nav-btn">Stack</a>
@@ -53,8 +83,8 @@
                         <p class="serif-lead">"I prefer thoughtful, simple software over unnecessary complexity."</p>
                     </div>
                     <div class="about-text">
-                        <p>I am Hexa-Programmer, a builder creating software, open-source tools, and experiments.</p>
-                        <p>My focus is on building software that solves real problems. I believe in exploring different technologies, learning through shipping projects, and constantly iterating to improve the final product. Above all, I have a deep interest in polished user experiences, minimal interfaces, and clean architecture.</p>
+                        <p>I am Hexa-Programmer, a <strong>software developer</strong> and <strong>open-source builder</strong> creating software projects, open-source tools, and interactive experiments.</p>
+                        <p>My focus is on web development and programming software that solves real problems. I believe in exploring different technologies—from Python and JavaScript to Swift and Linux systems—learning through shipping projects, and constantly iterating to improve the final product. Above all, I have a deep interest in <em>polished user experiences, minimal interfaces, and clean architecture</em>.</p>
                     </div>
                 </div>
             </div>
@@ -68,7 +98,7 @@
                     <article class="project-card">
                         <h3 class="project-title">ProjectAtmos</h3>
                         <p class="project-desc">An interactive educational visualization of Earth's atmosphere. Built to make science more visual, interactive, and engaging through scrolling exploration.</p>
-                        <div class="project-tech-list">
+                        <div class="project-tech-list" aria-label="Technologies used">
                             <span>HTML</span>
                             <span>CSS</span>
                             <span>JavaScript</span>
@@ -78,7 +108,7 @@
                     <article class="project-card">
                         <h3 class="project-title">HexaSimulators</h3>
                         <p class="project-desc">A collection of interactive simulations and experiments designed to help users understand concepts through visual interaction.</p>
-                        <div class="project-tech-list">
+                        <div class="project-tech-list" aria-label="Technologies used">
                             <span>HTML</span>
                             <span>CSS</span>
                             <span>JavaScript</span>
@@ -88,7 +118,7 @@
                     <article class="project-card">
                         <h3 class="project-title">HexaFocus</h3>
                         <p class="project-desc">A minimal, calm, and distraction-free productivity application built to help users concentrate on deep work.</p>
-                        <div class="project-tech-list">
+                        <div class="project-tech-list" aria-label="Technologies used">
                             <span>HTML</span>
                             <span>CSS</span>
                             <span>JavaScript</span>
@@ -98,7 +128,7 @@
                     <article class="project-card">
                         <h3 class="project-title">HexaWeather</h3>
                         <p class="project-desc">A minimal, browser-based weather application providing live weather data with no backend required.</p>
-                        <div class="project-tech-list">
+                        <div class="project-tech-list" aria-label="Technologies used">
                             <span>HTML</span>
                             <span>CSS</span>
                             <span>JavaScript</span>
@@ -108,19 +138,18 @@
 
                     <article class="project-card">
                         <h3 class="project-title">HexaCalculator</h3>
-                        <p class="project-desc">A calculator application focused on clean UI and user experience, later explored again in SwiftUI with modern Apple-inspired design.</p>
-                        <div class="project-tech-list">
+                        <p class="project-desc">A calculator application focused on clean UI and user experience.</p>
+                        <div class="project-tech-list" aria-label="Technologies used">
                             <span>HTML</span>
                             <span>CSS</span>
                             <span>JavaScript</span>
-                            <span>SwiftUI</span>
                         </div>
                     </article>
 
                     <article class="project-card">
                         <h3 class="project-title">HexaTyping</h3>
                         <p class="project-desc">A minimalist terminal-based typing tester designed to create a fast typing experience for Linux power users.</p>
-                        <div class="project-tech-list">
+                        <div class="project-tech-list" aria-label="Technologies used">
                             <span>Python</span>
                             <span>TUI</span>
                             <span>Linux</span>
@@ -130,7 +159,7 @@
                     <article class="project-card">
                         <h3 class="project-title">HexaMorse</h3>
                         <p class="project-desc">A terminal-first workflow tool for Morse code typing, featuring a real-time cheatsheet.</p>
-                        <div class="project-tech-list">
+                        <div class="project-tech-list" aria-label="Technologies used">
                             <span>Python</span>
                             <span>CLI</span>
                             <span>Linux</span>
@@ -140,7 +169,7 @@
                     <article class="project-card">
                         <h3 class="project-title">HexaNotes</h3>
                         <p class="project-desc">A lightweight notes application focused on a clean, minimal interface for capturing thoughts.</p>
-                        <div class="project-tech-list">
+                        <div class="project-tech-list" aria-label="Technologies used">
                             <span>HTML</span>
                             <span>CSS</span>
                             <span>JavaScript</span>
@@ -156,7 +185,7 @@
                 <h2 class="section-title">Technical Stack</h2>
                 <div class="stack-categories">
                     
-                    <div class="stack-category">
+                    <article class="stack-category">
                         <h3 class="stack-category-title">Languages</h3>
                         <div class="stack-items">
                             <div class="stack-pill">Python</div>
@@ -166,23 +195,23 @@
                             <div class="stack-pill">Swift</div>
                             <div class="stack-pill">C++</div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="stack-category">
+                    <article class="stack-category">
                         <h3 class="stack-category-title">Platforms</h3>
                         <div class="stack-items">
                             <div class="stack-pill">Linux</div>
                             <div class="stack-pill">macOS</div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="stack-category">
+                    <article class="stack-category">
                         <h3 class="stack-category-title">Tools</h3>
                         <div class="stack-items">
                             <div class="stack-pill">Git</div>
                             <div class="stack-pill">GitHub</div>
                         </div>
-                    </div>
+                    </article>
 
                 </div>
             </div>
@@ -192,7 +221,7 @@
             <div class="section-content reveal">
                 <h2 class="section-title">GitHub Activity</h2>
                 <div class="github-container">
-                    <p class="github-bio">"Programmer building software, OSS tools, and products that solve real problems. Exploring new ideas, shipping fast, and working towards the next big thing"</p>
+                    <p class="github-bio">"Programmer building software, OSS tools, and products that <strong>solve real problems</strong>. Exploring new ideas, shipping fast, and working towards the next big thing."</p>
                     
                     <div class="github-stats">
                         <div class="stat-item">
@@ -207,13 +236,9 @@
                             <span class="stat-number">239</span>
                             <span class="stat-label">Contributions Last Year</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">Pull Shark</span>
-                            <span class="stat-label">Achievement</span>
-                        </div>
                     </div>
                     <div class="github-action">
-                        <a href="https://github.com/Hexa-Programmer" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View Profile</a>
+                        <a href="https://github.com/Hexa-Programmer" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" aria-label="View Hexa-Programmer's GitHub Profile">View Profile</a>
                     </div>
                 </div>
             </div>
@@ -226,13 +251,13 @@
                     <p class="contact-heading serif">Let's build something together.</p>
                     <p class="contact-desc">Open for collaboration on open-source tools, products, and software experiments.</p>
                     <div class="contact-links">
-                        <a href="https://github.com/Hexa-Programmer" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <a href="https://github.com/Hexa-Programmer" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Visit my GitHub">
                             <span>GitHub</span>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                         </a>
-                        <a href="mailto:contact@hexaprogrammer.dev" class="contact-link">
+                        <a href="mailto:contact@hexaprogrammer.dev" class="contact-link" aria-label="Send me an Email">
                             <span>Email</span>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                         </a>
                     </div>
                 </div>
@@ -242,10 +267,10 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; Hexa-Programmer. Built with HTML, CSS, and JavaScript.</p>
+            <p>&copy; <span id="year"></span> Hexa-Programmer. Building thoughtful software.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

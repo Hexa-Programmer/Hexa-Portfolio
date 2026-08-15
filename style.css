@@ -41,6 +41,25 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+*:focus-visible {
+    outline: 2px solid var(--text-primary);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+strong {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+em {
+    font-family: var(--font-editorial);
+    font-style: italic;
+    font-weight: 400;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+}
+
 .serif {
     font-family: var(--font-editorial);
 }
@@ -99,6 +118,7 @@ body {
     color: var(--text-secondary);
     text-decoration: none;
     transition: color 0.2s ease;
+    font-weight: 400;
 }
 
 .fixed-nav-item:hover {
@@ -140,7 +160,7 @@ body {
 .hero-badge {
     display: block;
     font-size: 0.85rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--text-secondary);
@@ -151,7 +171,7 @@ body {
     font-family: var(--font-editorial);
     font-size: clamp(2.8rem, 6vw, 5.2rem);
     line-height: 1.05;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: -0.03em;
     margin-bottom: 1.5rem;
     color: var(--text-primary);
@@ -180,6 +200,7 @@ body {
     color: var(--text-secondary);
     transition: color 0.3s ease, transform 0.3s ease;
     display: block;
+    font-weight: 400;
 }
 
 .nav-btn:hover {
@@ -209,7 +230,7 @@ body {
     padding: 0.85rem 1.6rem;
     border-radius: 999px;
     font-size: 0.95rem;
-    font-weight: 400;
+    font-weight: 500;
     transition: all 0.25s ease;
     display: inline-block;
 }
@@ -238,6 +259,7 @@ body {
     line-height: 1.3;
     color: var(--text-primary);
     font-style: italic;
+    font-weight: 400;
 }
 
 .about-text p {
@@ -273,7 +295,7 @@ body {
 .project-title {
     font-family: var(--font-editorial);
     font-size: 1.6rem;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: -0.01em;
     color: var(--text-primary);
     margin-bottom: 0.8rem;
@@ -301,6 +323,7 @@ body {
     padding: 0.3rem 0.75rem;
     border-radius: 999px;
     border: 1px solid var(--border-color);
+    font-weight: 400;
 }
 
 .stack-categories {
@@ -319,7 +342,7 @@ body {
 .stack-category-title {
     font-family: var(--font-editorial);
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--text-primary);
     margin-bottom: 1.2rem;
 }
@@ -337,7 +360,7 @@ body {
     padding: 0.6rem 1.2rem;
     border-radius: 999px;
     font-size: 0.9rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .github-container {
@@ -354,6 +377,7 @@ body {
     font-style: italic;
     line-height: 1.4;
     max-width: 900px;
+    font-weight: 400;
 }
 
 .github-stats {
@@ -380,6 +404,7 @@ body {
 .stat-label {
     font-size: 0.85rem;
     color: var(--text-secondary);
+    font-weight: 400;
 }
 
 .contact-card {
@@ -396,6 +421,7 @@ body {
     font-size: clamp(2rem, 3.5vw, 2.8rem);
     color: var(--text-primary);
     margin-bottom: 1rem;
+    font-weight: 400;
 }
 
 .contact-desc {
@@ -423,6 +449,7 @@ body {
     font-size: 0.95rem;
     transition: all 0.25s ease;
     background-color: var(--bg-color);
+    font-weight: 500;
 }
 
 .contact-link:hover {
@@ -439,6 +466,7 @@ body {
 .footer-content p {
     font-size: 0.85rem;
     color: var(--text-secondary);
+    font-weight: 300;
 }
 
 .reveal {
@@ -474,18 +502,37 @@ body {
         padding-left: 0;
         padding-top: 2.5rem;
         flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1.5rem;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 0.5rem; 
+        width: 100%;
+    }
+
+    .nav-btn {
+        font-size: clamp(1.1rem, 3vw, 1.5rem);
+        white-space: nowrap;
     }
 
     .nav-btn:hover {
-        transform: translateY(-5px);
+        transform: translateY(-3px);
     }
 }
 
 @media (max-width: 768px) {
     .fixed-nav-links {
         display: none;
+    }
+
+    .hero-nav-right {
+        gap: 0.5rem;
+    }
+    
+    .nav-btn {
+        font-size: clamp(0.9rem, 3.5vw, 1.1rem);
     }
 
     .about-grid {
