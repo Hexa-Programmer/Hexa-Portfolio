@@ -9,9 +9,6 @@ if (window.location.hash) {
     window.scrollTo(0, 0);
 }
 
-window.addEventListener('beforeunload', () => {
-    window.scrollTo(0, 0);
-});
 
 window.addEventListener('pageshow', (event) => {
     if (event.persisted) {
