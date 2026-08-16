@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HexaWeather | Hexa-Programmer</title>
+    <meta name="description" content="A minimal local-first weather application built using HTML, CSS, and JavaScript. It fetches live weather data from the Open-Meteo API.">
+    <meta name="author" content="Hexa-Programmer">
+    <meta name="theme-color" content="#DDEAF2">
+    
+    <link rel="canonical" href="https://hexaprogrammer.dev/hexaweather">
+    
+    <meta property="og:title" content="HexaWeather | Hexa-Programmer">
+    <meta property="og:description" content="A minimal local-first weather application built using HTML, CSS, and JavaScript. It fetches live weather data from the Open-Meteo API.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hexaprogrammer.dev/hexaweather">
+    <meta property="og:image" content="https://hexaprogrammer.dev/logo.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HexaWeather | Hexa-Programmer">
+    <meta name="twitter:description" content="A minimal local-first weather application built using HTML, CSS, and JavaScript. It fetches live weather data from the Open-Meteo API.">
+    <meta name="twitter:image" content="https://hexaprogrammer.dev/logo.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "HexaWeather",
+      "author": {
+        "@type": "Person",
+        "name": "Hexa-Programmer"
+      },
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "Web Application",
+      "description": "A minimal local-first weather application built using HTML, CSS, and JavaScript. It fetches live weather data from the Open-Meteo API."
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=League+Gothic&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="project-nav">
+        <nav class="project-nav-container" aria-label="Main Navigation">
+            <a href="index.html" class="back-link" aria-label="Back to Portfolio">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                <span>Hexa-Programmer</span>
+            </a>
+            <div class="project-nav-title">HexaWeather</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-light">
+            <div class="hero-layout reveal">
+                <div class="hero-header-row">
+                    <div class="hero-top-accent">
+                        <img src="logo.png" alt="Hexa-Programmer Logo" class="presents-logo" width="40" height="40">
+                        <span class="hero-badge">Hexa-Programmer Presents</span>
+                    </div>
+                    <h1 class="hero-title">HexaWeather</h1>
+                </div>
+                <div class="hero-content-row">
+                    <p class="hero-subtitle">
+                        <strong>HexaWeather</strong> is a minimal, weather application built using HTML, CSS, and JavaScript. <br>
+                        It fetches live weather data from the Open-Meteo API and runs entirely in the browser with no backend.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="https://hexa-programmer.github.io/HexaWeather/" target="_blank" rel="noopener noreferrer" class="btn btn-dark" aria-label="View HexaWeather Live Demo">Live Demo</a>
+                        <a href="https://github.com/Hexa-Programmer/HexaWeather" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View Source Code on GitHub">View Source</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-dark">
+            <div class="showcase-layout reveal">
+                <div class="showcase-bg-text" aria-hidden="true">ForecastSummary</div>
+                
+                <div class="showcase-grid">
+                    <div class="showcase-image-container">
+                        <img src="sc.png" alt="HexaWeather Application Interface displaying weather forecast" class="showcase-image" width="1668" height="2388" loading="lazy">
+                    </div>
+                    
+                    <div class="showcase-text-right">
+                        <span class="vertical-text">WEATHER, REDEFINED</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-details reveal">
+                
+                <div class="detail-section">
+                    <h2 class="detail-title">Features</h2>
+                    <div class="features-grid">
+                        <article class="feature-card">
+                            <h3>1) City Search</h3>
+                            <p>Search for accurate weather information for cities and locations around the world.</p>
+                        </article>
+                        <article class="feature-card">
+                            <h3>2) Live Weather</h3>
+                            <p>Displays current temperature and detailed atmospheric weather conditions effortlessly.</p>
+                        </article>
+                        <article class="feature-card">
+                            <h3>3) 5-Day Forecast</h3>
+                            <p>View daily high and low temperatures for the coming week in a clean, minimal interface.</p>
+                        </article>
+                        <article class="feature-card">
+                            <h3>4) Recent Searches</h3>
+                            <p>Stores recently searched cities locally using localStorage for immediate, quick access.</p>
+                        </article>
+                        <article class="feature-card">
+                            <h3>5) Dynamic Theme</h3>
+                            <p>Automatically switches between day and night themes based on local time environments.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="detail-section split-section">
+                    <div class="split-left">
+                        <h2 class="detail-title">How it works</h2>
+                        <p class="detail-text">When a city is searched, the application communicates with external endpoints:</p>
+                        <div class="code-block-wrapper">
+                            <pre class="code-block"><code>1) Geocoding API converts city to coordinates
+2) Forecast API retrieves local weather data</code></pre>
+                        </div>
+                        <p class="detail-text mt-2">Recent searches are stored locally using:</p>
+                        <pre class="code-block inline-code"><code>localStorage</code></pre>
+                        <p class="detail-text mt-1">This allows quick access to previously searched cities without any backend database.</p>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h2 class="detail-title center-mobile">Tech Stack</h2>
+                    <div class="stack-list" aria-label="Technologies Used">
+                        <span class="stack-pill">- HTML5</span>
+                        <span class="stack-pill">- CSS3</span>
+                        <span class="stack-pill">- Vanilla JavaScript</span>
+                        <span class="stack-pill">- Open-Meteo API</span>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h2 class="detail-title center-mobile">Installation</h2>
+                    <div class="os-toggle-container">
+                        <div class="os-toggle" aria-label="Operating System Selection" role="group">
+                            <button class="os-btn" data-os="windows" aria-pressed="false">Windows</button>
+                            <button class="os-btn" data-os="unix" aria-pressed="false">Linux/macOS</button>
+                        </div>
+                    </div>
+                    <p class="detail-text center-mobile">To run HexaWeather locally:</p>
+                    <div class="code-block-wrapper large-code-block">
+                        <button class="copy-btn" id="copy-btn" aria-label="Copy installation commands to clipboard">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <pre class="code-block"><code id="install-code">git clone https://github.com/Hexa-Programmer/HexaWeather.git
+cd HexaWeather
+open index.html</code></pre>
+                    </div>
+                </div>
+
+                <div class="detail-section learning-note">
+                    <h2 class="detail-title center-text">Note</h2>
+                    <p>This is a personal learning project and will continue to evolve over time.</p>
+                </div>
+
+            </div>
+            
+            <footer class="project-footer">
+                <div class="footer-content">
+                    <p>Made with ❤️ by Hexa-Programmer</p>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
