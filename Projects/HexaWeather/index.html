@@ -6,7 +6,7 @@
     <title>HexaWeather | Hexa-Programmer</title>
     <meta name="description" content="A minimal local-first weather application built using HTML, CSS, and JavaScript. It fetches live weather data from the Open-Meteo API.">
     <meta name="author" content="Hexa-Programmer">
-    <meta name="theme-color" content="#DDEAF2">
+    <meta name="theme-color" content="#cfeaf7">
     
     <link rel="canonical" href="https://hexaprogrammer.dev/hexaweather">
     
@@ -77,15 +77,14 @@
 
         <section class="section-dark">
             <div class="showcase-layout reveal">
-                <div class="showcase-bg-text" aria-hidden="true">ForecastSummary</div>
-                
                 <div class="showcase-grid">
                     <div class="showcase-image-container">
-                        <img src="sc.png" alt="HexaWeather Application Interface displaying weather forecast" class="showcase-image" width="1668" height="2388" loading="lazy">
+                        <div class="showcase-bg-text" aria-hidden="true">ForecastSummary</div>
+                        <img src="sc.png" alt="HexaWeather Application Interface displaying weather forecast" class="showcase-image" width="1668" height="2388" fetchpriority="high">
                     </div>
                     
                     <div class="showcase-text-right">
-                        <span class="vertical-text">WEATHER, REDEFINED</span>
+                        <span class="vertical-text">WEATHER DEFINED</span>
                     </div>
                 </div>
             </div>
@@ -168,9 +167,9 @@ open index.html</code></pre>
 
             </div>
             
-            <footer class="project-footer">
+            <footer class="project-footer section-dark">
                 <div class="footer-content">
-                    <p>Made with ❤️ by Hexa-Programmer</p>
+                    <p>&copy; <span id="year"></span> Hexa-Programmer. All Rights Reserved. Made with ❤️ by Hexa-Programmer</p>
                 </div>
             </footer>
         </section>

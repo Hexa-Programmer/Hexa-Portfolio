@@ -44,17 +44,9 @@ const sectionDark = document.querySelector('.section-dark');
 const navColorObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            projectNav.style.backgroundColor = 'transparent';
-            projectNav.style.color = 'var(--hw-text-on-dark)';
-            projectNav.style.borderBottom = '1px solid transparent';
-            projectNav.style.backdropFilter = 'none';
-            projectNav.style.webkitBackdropFilter = 'none';
+            projectNav.classList.add('nav-light-text');
         } else {
-            projectNav.style.backgroundColor = 'var(--hw-nav-bg)';
-            projectNav.style.color = 'var(--hw-text-on-light)';
-            projectNav.style.borderBottom = '1px solid rgba(109, 141, 150, 0.1)';
-            projectNav.style.backdropFilter = 'blur(15px)';
-            projectNav.style.webkitBackdropFilter = 'blur(15px)';
+            projectNav.classList.remove('nav-light-text');
         }
     });
 }, {
@@ -115,3 +107,4 @@ if (copyBtn && installCode) {
         });
     });
 }
+document.getElementById("year").textContent = new Date().getFullYear();
