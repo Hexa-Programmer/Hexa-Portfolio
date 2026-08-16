@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HexaNotes | Hexa-Programmer</title>
+    <meta name="description" content="HexaNotes is a minimal, note-taking web-application built using HTML, CSS, and JavaScript.">
+    <meta name="author" content="Hexa-Programmer">
+    <meta name="theme-color" content="#8F5BFF">
+    
+    <meta property="og:title" content="HexaNotes | Hexa-Programmer">
+    <meta property="og:description" content="A minimal, web application built using HTML, CSS, and JavaScript running entirely in the browser using localStorage.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hexaprogrammer.dev/hexanotes">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HexaNotes | Hexa-Programmer">
+    <meta name="twitter:description" content="A minimal, web application built using HTML, CSS, and JavaScript running entirely in the browser using localStorage.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=League+Gothic&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="project-nav">
+        <nav class="project-nav-container" aria-label="Main Navigation">
+            <a href="index.html" class="back-link" aria-label="Back to Portfolio">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                <span>Hexa-Programmer</span>
+            </a>
+            <div class="project-nav-title">HexaNotes</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-light">
+            <div class="hero-layout reveal">
+                <div class="hero-top-accent">
+                    <img src="logo.png" alt="" class="presents-logo" aria-hidden="true">
+                    <span class="hero-badge">Hexa-Programmer Presents</span>
+                </div>
+                <h1 class="hero-title">HexaNotes</h1>
+                <p class="hero-subtitle">
+                    <strong>HexaNotes</strong> is a minimal, web application built using HTML, CSS, and JavaScript. <br><br>
+                    It runs entirely in the browser with no backend and uses localStorage for persistence.
+                </p>
+                <div class="hero-cta">
+                    <a href="https://hexa-programmer.github.io/HexaNotes/" target="_blank" rel="noopener noreferrer" class="btn btn-dark" aria-label="View HexaNotes Live">Live Demo</a>
+                    <a href="https://github.com/Hexa-Programmer/HexaNotes" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View Source on GitHub">View Source</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-dark">
+            <div class="showcase-layout reveal">
+                <div class="showcase-grid">
+                    <div class="showcase-text-left">
+                        <span class="vertical-text">THE REVOLUTION</span>
+                    </div>
+                    
+                    <div class="showcase-center">
+                        <div class="showcase-bg-text">LocalStorage</div>
+                        <img src="sc.png" alt="HexaNotes Application Interface" class="showcase-image">
+                    </div>
+                    
+                    <div class="showcase-text-right">
+                        <span class="vertical-text">OF NOTE-TAKING</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-details reveal">
+                
+                <div class="detail-section">
+                    <h2 class="detail-title">Features</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <h3>1) Multiple Notes Support</h3>
+                            <p>Create and manage multiple notes in a sidebar.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>2) Live Editing</h3>
+                            <p>Instantly edit title and content with real-time saving.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>3) Persistent Storage</h3>
+                            <p>Uses localStorage to save notes even after refresh.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>4) Sidebar Navigation</h3>
+                            <p>Quickly switch between notes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-section split-section">
+                    <div class="split-left">
+                        <h2 class="detail-title">How it works</h2>
+                        <p class="detail-text">Each note is stored as an object:</p>
+                        <div class="code-block-wrapper">
+                            <pre class="code-block"><code>{
+    id: Date.now(),
+    title: "Note title",
+    content: "Note content"
+}</code></pre>
+                        </div>
+                        <p class="detail-text mt-2">All notes are stored in browser storage using:</p>
+                        <pre class="code-block inline-code"><code>localStorage</code></pre>
+                        <p class="detail-text mt-1">This allows data to persist without any backend.</p>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h2 class="detail-title center-mobile">Tech Stack</h2>
+                    <div class="stack-list">
+                        <span class="stack-pill">- HTML5</span>
+                        <span class="stack-pill">- CSS3</span>
+                        <span class="stack-pill">- Vanilla JavaScript (no frameworks)</span>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h2 class="detail-title center-mobile">Installation</h2>
+                    <div class="os-toggle-container">
+                        <div class="os-toggle" aria-label="Operating System Selection">
+                            <button class="os-btn" data-os="windows">Windows</button>
+                            <button class="os-btn" data-os="unix">Linux/macOS</button>
+                        </div>
+                    </div>
+                    <p class="detail-text center-mobile">To run HexaNotes locally:</p>
+                    <div class="code-block-wrapper large-code-block">
+                        <button class="copy-btn" id="copy-btn" aria-label="Copy to clipboard">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <pre class="code-block"><code id="install-code">git clone https://github.com/Hexa-Programmer/HexaNotes.git
+cd HexaNotes
+open index.html</code></pre>
+                    </div>
+                </div>
+
+                <div class="detail-section learning-note">
+                    <h2 class="detail-title center-text">Note</h2>
+                    <p>This is a personal learning project and will continue to evolve over time.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="project-footer section-dark">
+        <div class="footer-content">
+            <p>Made with ❤️ by Hexa-Programmer</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
