@@ -9,9 +9,7 @@ if (window.location.hash) {
     window.scrollTo(0, 0);
 }
 
-window.addEventListener('beforeunload', () => {
-    window.scrollTo(0, 0);
-});
+
 
 window.addEventListener('pageshow', (event) => {
     if (event.persisted) {
@@ -72,8 +70,10 @@ function setOS(os) {
     osBtns.forEach(btn => {
         if (btn.dataset.os === os) {
             btn.classList.add('active');
+            btn.setAttribute('aria-pressed', 'true');
         } else {
             btn.classList.remove('active');
+            btn.setAttribute('aria-pressed', 'false');
         }
     });
     if (installCode) {
@@ -98,10 +98,12 @@ if (copyBtn && installCode) {
     copyBtn.addEventListener('click', () => {
         navigator.clipboard.writeText(installCode.textContent).then(() => {
             const originalHTML = copyBtn.innerHTML;
-            copyBtn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+            copyBtn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>';
             setTimeout(() => {
                 copyBtn.innerHTML = originalHTML;
             }, 2000);
         });
     });
 }
+
+document.getElementById("year").textContent = new Date().getFullYear();
