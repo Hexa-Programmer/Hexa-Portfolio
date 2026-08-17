@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HexaFocus | Hexa-Programmer</title>
+    <meta name="description" content="A minimal focus timer designed to help you create intentional work sessions, track progress, and stay focused. Built using HTML, CSS, and JavaScript.">
+    <meta name="author" content="Hexa-Programmer">
+    <meta name="theme-color" content="#c2ee74">
+    
+    <link rel="canonical" href="https://hexaprogrammer.dev/hexafocus">
+    
+    <meta property="og:title" content="HexaFocus | Hexa-Programmer">
+    <meta property="og:description" content="A minimal local-first focus timer built using HTML, CSS, and JavaScript. It runs entirely in the browser and stores data locally using localStorage.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hexaprogrammer.dev/hexafocus">
+    <meta property="og:image" content="https://hexaprogrammer.dev/logo.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HexaFocus | Hexa-Programmer">
+    <meta name="twitter:description" content="A minimal local-first focus timer built using HTML, CSS, and JavaScript. It runs entirely in the browser and stores data locally using localStorage.">
+    <meta name="twitter:image" content="https://hexaprogrammer.dev/logo.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "HexaFocus",
+      "author": {
+        "@type": "Person",
+        "name": "Hexa-Programmer"
+      },
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "Web Application",
+      "description": "A minimal local-first focus timer built using HTML, CSS, and JavaScript. It runs entirely in the browser and stores data locally using localStorage."
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=League+Gothic&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="project-nav">
+        <nav class="project-nav-container" aria-label="Main Navigation">
+            <a href="https://hexaprogrammer.dev" class="back-link" aria-label="Back to Portfolio">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                <span>Hexa-Programmer</span>
+            </a>
+            <div class="project-nav-title">HexaFocus</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-light">
+            <div class="hero-layout reveal">
+                <div class="hero-header-row">
+                    <div class="hero-top-accent">
+                        <img src="logo.png" alt="Hexa-Programmer Logo" class="presents-logo" width="40" height="40">
+                        <span class="hero-badge">Hexa-Programmer Presents</span>
+                    </div>
+                    <h1 class="hero-title">HEXAFOCUS</h1>
+                </div>
+                <div class="hero-content-row">
+                    <p class="hero-subtitle">
+                        <strong>HexaFocus</strong> is a minimal focus timer and session tracker built using HTML, CSS, and JavaScript. <br>
+                        It runs entirely in the browser with no backend and uses localStorage for persistence.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="https://hexa-programmer.github.io/HexaFocus/" target="_blank" rel="noopener noreferrer" class="btn btn-dark" aria-label="View HexaFocus Live Demo">Live Demo</a>
+                        <a href="https://github.com/Hexa-Programmer/HexaFocus" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View Source Code on GitHub">View Source</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-dark">
+            <div class="showcase-layout reveal">
+                <div class="showcase-grid">
+                    <div class="showcase-text-left">
+                        <span class="vertical-text">LESS NOISE</span>
+                        <span class="horizontal-subtext">MORE WORK</span>
+                    </div>
+                    
+                    <div class="showcase-image-container">
+                        <div class="showcase-bg-text" aria-hidden="true">Pomodoro</div>
+                        <img src="sc.png" alt="HexaFocus Application Interface displaying a focus session" class="showcase-image" width="1800" height="1200" fetchpriority="high">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-details reveal">
+                
+                <div class="detail-section">
+                    <h2 class="detail-title">Features</h2>
+                    <div class="features-grid">
+                        <article class="feature-card">
+                            <span class="feature-number">01</span>
+                            <h3>Focus Sessions</h3>
+                            <p>Create and start focused work sessions with custom, meaningful titles.</p>
+                        </article>
+                        <article class="feature-card">
+                            <span class="feature-number">02</span>
+                            <h3>Live Stopwatch</h3>
+                            <p>Track your active focus time seamlessly with a real-time, precision timer.</p>
+                        </article>
+                        <article class="feature-card">
+                            <span class="feature-number">03</span>
+                            <h3>Goal Tracking</h3>
+                            <p>Optionally set a clear goal and mark whether it was achieved during the session.</p>
+                        </article>
+                        <article class="feature-card">
+                            <span class="feature-number">04</span>
+                            <h3>Session History</h3>
+                            <p>View your previous sessions along with their duration, descriptions, and results.</p>
+                        </article>
+                        <article class="feature-card">
+                            <span class="feature-number">05</span>
+                            <h3>Persistent Storage</h3>
+                            <p>Sessions are automatically and securely saved locally using browser localStorage.</p>
+                        </article>
+                        <article class="feature-card">
+                            <span class="feature-number">06</span>
+                            <h3>Responsive Design</h3>
+                            <p>Optimized to provide a clean, distraction-free interface across desktop and mobile.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="detail-section split-section">
+                    <div class="split-left">
+                        <h2 class="detail-title">How it works</h2>
+                        <p class="detail-text">HexaFocus relies on a browser-only architecture. Each session is structured as a standalone state object:</p>
+                        <div class="code-block-wrapper">
+                            <pre class="code-block"><code>{
+    id: Date.now(),
+    title: "Session title",
+    desc: "Optional description",
+    goal: "Optional goal",
+    durationSec: 0,
+    status: "ended",
+    goalAchieved: true
+}</code></pre>
+                        </div>
+                        <p class="detail-text mt-2">To maintain session history without a database, everything is stringified and saved using:</p>
+                        <pre class="code-block inline-code"><code>localStorage</code></pre>
+                        <p class="detail-text mt-1">This guarantees rapid load times and complete data privacy.</p>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h2 class="detail-title center-mobile">Tech Stack</h2>
+                    <div class="stack-list" aria-label="Technologies Used">
+                        <span class="stack-pill">HTML5</span>
+                        <span class="stack-pill">CSS3</span>
+                        <span class="stack-pill">JavaScript</span>
+                        <span class="stack-pill">localStorage</span>
+                        <span class="stack-pill">No Backend</span>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h2 class="detail-title center-mobile">Installation</h2>
+                    <div class="os-toggle-container">
+                        <div class="os-toggle" aria-label="Operating System Selection" role="group">
+                            <button class="os-btn" data-os="windows" aria-pressed="false">Windows</button>
+                            <button class="os-btn" data-os="unix" aria-pressed="false">Linux/macOS</button>
+                        </div>
+                    </div>
+                    <p class="detail-text center-mobile">To run HexaFocus locally:</p>
+                    <div class="code-block-wrapper large-code-block">
+                        <button class="copy-btn" id="copy-btn" aria-label="Copy installation commands to clipboard">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <pre class="code-block"><code id="install-code">git clone https://github.com/Hexa-Programmer/HexaFocus.git
+cd HexaFocus
+open index.html</code></pre>
+                    </div>
+                </div>
+
+                <div class="detail-section learning-note">
+                    <h2 class="detail-title center-text">Note</h2>
+                    <p>This is a personal learning project and will continue to evolve over time.</p>
+                </div>
+
+            </div>
+            
+            <footer class="project-footer">
+                <div class="footer-content">
+                    <p>Made with ❤️ by Hexa-Programmer</p>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
