@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HexaCalculator | Hexa-Programmer</title>
+    <meta name="description" content="HexaCalculator is a minimal web calculator built for quick, focused calculations without leaving the browser, utilizing localStorage for calculation history.">
+    <meta name="author" content="Hexa-Programmer">
+    <meta name="theme-color" content="#617AFA">
+    
+    <link rel="canonical" href="https://hexaprogrammer.dev/hexacalculator">
+    
+    <meta property="og:title" content="HexaCalculator | Hexa-Programmer">
+    <meta property="og:description" content="A minimal browser-based calculator built using HTML, CSS, and JavaScript. It features persistent calculation history utilizing localStorage.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hexaprogrammer.dev/hexacalculator">
+    <meta property="og:image" content="https://hexaprogrammer.dev/logo.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HexaCalculator | Hexa-Programmer">
+    <meta name="twitter:description" content="A minimal browser-based calculator built using HTML, CSS, and JavaScript. It features persistent calculation history utilizing localStorage.">
+    <meta name="twitter:image" content="https://hexaprogrammer.dev/logo.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "HexaCalculator",
+      "author": {
+        "@type": "Person",
+        "name": "Hexa-Programmer"
+      },
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "Web Application",
+      "description": "A minimal browser-based calculator built using HTML, CSS, and JavaScript. It features persistent calculation history utilizing localStorage."
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=League+Gothic&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="project-nav">
+        <nav class="project-nav-container" aria-label="Main Navigation">
+            <a href="https://hexaprogrammer.dev" class="back-link" aria-label="Back to Portfolio">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                <span>Hexa-Programmer</span>
+            </a>
+            <div class="project-nav-title">HexaCalculator</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-light">
+            <div class="hero-layout reveal">
+                <div class="hero-header-row">
+                    <div class="hero-top-accent">
+                        <img src="logo.png" alt="Hexa-Programmer Logo" class="presents-logo" width="40" height="40">
+                        <span class="hero-badge">Hexa-Programmer Presents</span>
+                    </div>
+                    <h1 class="hero-title">HEXACALCULATOR</h1>
+                </div>
+                <div class="hero-content-row">
+                    <p class="hero-subtitle">
+                        <strong>HexaCalculator</strong> is a minimal web calculator built for quick, focused calculations without leaving the browser. <br>
+                        It operates through a completely browser-based architecture and uses localStorage to retain calculation history.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="https://hexa-programmer.github.io/HexaCalculator/" target="_blank" rel="noopener noreferrer" class="btn btn-dark" aria-label="View HexaCalculator Live Demo">Live Demo</a>
+                        <a href="https://github.com/Hexa-Programmer/HexaCalculator" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View Source Code on GitHub">View Source</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-dark">
+            <div class="showcase-layout reveal">
+                <div class="showcase-grid">
+                    <div class="showcase-text-left">
+                        <span class="vertical-text">CALCULATION</span>
+                    </div>
+                    
+                    <div class="showcase-center">
+                        <div class="showcase-bg-text" aria-hidden="true">CalcHistory</div>
+                        <img src="sc.png" alt="HexaCalculator Application Interface displaying calculation interface" class="showcase-image" width="1668" height="2388" fetchpriority="high">
+                    </div>
+
+                    <div class="showcase-text-right">
+                        <span class="vertical-text">SIMPLIFIED</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-details reveal">
+                
+                <div class="detail-section">
+                    <h2 class="detail-title">Features</h2>
+                    <div class="features-grid">
+                        <article class="feature-card">
+                            <span class="feature-number">01</span>
+                            <h3>Minimal Calculator</h3>
+                            <p>A clean browser-based calculator focused entirely on essential arithmetic.</p>
+                        </article>
+                        <article class="feature-card">
+                            <span class="feature-number">02</span>
+                            <h3>Calculation History</h3>
+                            <p>Previous calculations can be reviewed intuitively without leaving the application.</p>
+                        </article>
+                        <article class="feature-card">
+                            <span class="feature-number">03</span>
+                            <h3>Persistent Storage</h3>
+                            <p>Calculation history is systematically stored locally using browser localStorage.</p>
+                        </article>
+                        <article class="feature-card">
+                            <span class="feature-number">04</span>
+                            <h3>Responsive Interface</h3>
+                            <p>The interface adapts cleanly and dynamically across desktop and mobile screens.</p>
+                        </article>
+                        <article class="feature-card">
+                            <span class="feature-number">05</span>
+                            <h3>Browser-Based</h3>
+                            <p>No backend or external service is required to perform calculations or store data.</p>
+                        </article>
+                        <article class="feature-card">
+                            <span class="feature-number">06</span>
+                            <h3>Vanilla JavaScript</h3>
+                            <p>Built using straightforward HTML, CSS, and JavaScript without complex frameworks.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="detail-section split-section">
+                    <div class="split-left">
+                        <h2 class="detail-title">How it works</h2>
+                        <p class="detail-text">As the user performs calculations, JavaScript instantly evaluates the operation and updates the display. Results can be sent to history, which is appended to an array and stringified:</p>
+                        <div class="code-block-wrapper">
+                            <pre class="code-block"><code>const history = JSON.parse(localStorage.getItem('calcHistory')) || [];
+history.push({ expr: "12 + 5", res: 17 });
+localStorage.setItem('calcHistory', JSON.stringify(history));</code></pre>
+                        </div>
+                        <p class="detail-text mt-2">When the application is reopened, the state is retrieved via:</p>
+                        <pre class="code-block inline-code"><code>localStorage.getItem('calcHistory')</code></pre>
+                        <p class="detail-text mt-1">This ensures continuity across sessions securely on the device.</p>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h2 class="detail-title center-mobile">Tech Stack</h2>
+                    <div class="stack-list" aria-label="Technologies Used">
+                        <span class="stack-pill">HTML5</span>
+                        <span class="stack-pill">CSS3</span>
+                        <span class="stack-pill">Vanilla JavaScript</span>
+                        <span class="stack-pill">localStorage</span>
+                        <span class="stack-pill">Responsive Design</span>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h2 class="detail-title center-mobile">Installation</h2>
+                    <div class="os-toggle-container">
+                        <div class="os-toggle" aria-label="Operating System Selection" role="group">
+                            <button class="os-btn" data-os="windows" aria-pressed="false">Windows</button>
+                            <button class="os-btn" data-os="unix" aria-pressed="false">Linux/macOS</button>
+                        </div>
+                    </div>
+                    <p class="detail-text center-mobile">To run HexaCalculator locally:</p>
+                    <div class="code-block-wrapper large-code-block">
+                        <button class="copy-btn" id="copy-btn" aria-label="Copy installation commands to clipboard">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <pre class="code-block"><code id="install-code">git clone https://github.com/Hexa-Programmer/HexaCalculator.git
+cd HexaCalculator
+open index.html</code></pre>
+                    </div>
+                </div>
+
+                <div class="detail-section learning-note">
+                    <h2 class="detail-title center-text">Note</h2>
+                    <p>This is a personal learning project and will continue to evolve over time.</p>
+                </div>
+
+            </div>
+            
+            <footer class="project-footer">
+                <div class="footer-content">
+                <p>&copy; <span id="year"></span> Hexa-Programmer. All Rights Reserved. Made with ❤️ by Hexa-Programmer</p>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
