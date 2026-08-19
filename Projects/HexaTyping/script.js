@@ -43,10 +43,8 @@ const projectNav = document.querySelector('.project-nav');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
         projectNav.style.backgroundColor = 'rgba(18, 20, 23, 0.95)';
-        projectNav.style.boxShadow = '0 4px 20px rgba(0,0,0,0.4)';
     } else {
         projectNav.style.backgroundColor = 'rgba(18, 20, 23, 0.85)';
-        projectNav.style.boxShadow = 'none';
     }
 });
 
