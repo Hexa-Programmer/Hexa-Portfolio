@@ -54,7 +54,7 @@ const copyBtn = document.getElementById('copy-btn');
 
 const codes = {
     unix: "git clone https://github.com/Hexa-Programmer/hexatyping.git\ncd hexatyping\npython hexatyping.py",
-    windows: "git clone https://github.com/Hexa-Programmer/hexatyping.git\ncd hexatyping\npython hexatyping.py"
+    arch: "yay -S hexatyping\nhexatyping"
 };
 
 function setOS(os) {
@@ -72,12 +72,7 @@ function setOS(os) {
     }
 }
 
-const userAgent = window.navigator.userAgent.toLowerCase();
-if (userAgent.indexOf("win") > -1) {
-    setOS('windows');
-} else {
-    setOS('unix');
-}
+setOS('unix');
 
 osBtns.forEach(btn => {
     btn.addEventListener('click', () => {
