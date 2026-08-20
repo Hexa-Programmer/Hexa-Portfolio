@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HexaMorse | Hexa-Programmer</title>
+    <meta name="description" content="HexaMorse is a terminal-based Morse code typing tool with a real-time cheatsheet. Type dots and dashes, and decode Morse instantly.">
+    <meta name="author" content="Hexa-Programmer">
+    <meta name="theme-color" content="#121417">
+    
+    <link rel="canonical" href="https://hexaprogrammer.dev/hexamorse">
+    
+    <meta property="og:title" content="HexaMorse | Hexa-Programmer">
+    <meta property="og:description" content="HexaMorse is a terminal-based Morse code typing tool with a real-time cheatsheet. Built with Python and curses.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hexaprogrammer.dev/hexamorse">
+    <meta property="og:image" content="https://hexaprogrammer.dev/logo.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HexaMorse | Hexa-Programmer">
+    <meta name="twitter:description" content="HexaMorse is a terminal-based Morse code typing tool with a real-time cheatsheet. Built with Python and curses.">
+    <meta name="twitter:image" content="https://hexaprogrammer.dev/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=League+Gothic&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="project-nav">
+        <nav class="project-nav-container" aria-label="Main Navigation">
+            <a href="https://hexaprogrammer.dev" class="back-link" aria-label="Back to Portfolio">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                <span>Hexa-Programmer</span>
+            </a>
+            <div class="project-nav-title">HEXAMORSE</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-hero">
+            <div class="hero-layout reveal">
+                <div class="hero-header-row">
+                    <div class="hero-top-accent">
+                        <img src="logo.png" alt="Hexa-Programmer Logo" class="presents-logo" width="40" height="40">
+                        <span class="hero-badge">Hexa-Programmer Presents</span>
+                    </div>
+                    <h1 class="hero-title">HEXAMORSE</h1>
+                </div>
+                <div class="hero-content-row">
+                    <p class="hero-subtitle">
+                        HexaMorse is a terminal-based Morse code typing tool with a real-time cheatsheet. Type dots and dashes, and decode Morse instantly. Built using Python and powered by curses, it is designed for practicing Morse code in a cross-platform, open-source environment.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="https://github.com/HexaProgrammer/HexaMorse" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="View HexaMorse on GitHub">View on GitHub</a>
+                        <a href="#installation" class="btn btn-secondary" aria-label="Install HexaMorse">Install</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-showcase reveal">
+            <div class="showcase-container showcase-left">
+                <div class="showcase-typography">
+                    <h2 class="display-text">TYPE.<br>DECODE.<br>REPEAT.</h2>
+                </div>
+                <div class="showcase-image-wrapper">
+                    <img src="sc.png" alt="HexaMorse terminal interface decoding morse code in real-time" class="terminal-screenshot" width="1200" height="800" fetchpriority="high">
+                </div>
+            </div>
+        </section>
+
+        <section class="section-details reveal">
+            <div class="content-wrapper">
+                <div class="editorial-header">
+                    <h2 class="section-title">FEATURES</h2>
+                </div>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <span class="feature-number">01</span>
+                        <h3>Real-time decoding</h3>
+                        <p>Morse input is decoded immediately as the user types, offering instant visual feedback.</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="feature-number">02</span>
+                        <h3>Live cheatsheet</h3>
+                        <p>The complete Morse alphabet remains visible while using the application for quick reference.</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="feature-number">03</span>
+                        <h3>Scrollable history</h3>
+                        <p>Previously entered Morse symbols and their translations remain continuously available in a scrollable history buffer.</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="feature-number">04</span>
+                        <h3>Terminal-first</h3>
+                        <p>Designed specifically and exclusively for the terminal utilizing Python's robust curses interface.</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="feature-number">05</span>
+                        <h3>Cross-platform</h3>
+                        <p>Thoroughly tested on Linux/Arch with curses and designed to run flawlessly across supported Python environments.</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="feature-number">06</span>
+                        <h3>Minimal constraints</h3>
+                        <p>No backend, no accounts, no unnecessary dependencies, and no complicated setup procedures required.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-details reveal">
+            <div class="content-wrapper split-layout">
+                <div class="split-left">
+                    <h2 class="section-title">MORSE REFERENCE</h2>
+                </div>
+                <div class="split-right">
+                    <p class="editorial-text mb-2">HexaMorse simplifies standard Morse code input by mapping common keyboard characters directly to Morse symbols. The interface processes these mapped keystrokes natively.</p>
+                    
+                    <div class="morse-grid-container">
+                        <div class="morse-column">
+                            <span class="technical-label mb-1">INPUT MAPPING</span>
+                            <div class="code-block minimal-code">
+                                <code>. → Dot</code><br>
+                                <code>, → Dash</code><br>
+                                <code>Q → Quit</code>
+                            </div>
+                        </div>
+                        <div class="morse-column">
+                            <span class="technical-label mb-1">EXAMPLES</span>
+                            <div class="code-block minimal-code">
+                                <code>.-  → A</code><br>
+                                <code>--. → G</code><br>
+                                <code>... → S</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-details reveal">
+            <div class="content-wrapper split-layout">
+                <div class="split-left">
+                    <h2 class="section-title">HOW IT WORKS</h2>
+                </div>
+                <div class="split-right">
+                    <p class="editorial-text">Interaction with HexaMorse is designed to be highly reflexive. Upon launching the application, the user simply enters a period <code class="inline-code">.</code> to register a dot, or a comma <code class="inline-code">,</code> to register a dash.</p>
+                    <p class="editorial-text mt-1">The interface captures the ongoing sequence and dynamically outputs the translation. If unsure of a character, the user can glance at the persistent cheatsheet located on the right side of the layout. Pressing <code class="inline-code">Q</code> safely exits the process and restores the terminal state.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-details reveal">
+            <div class="content-wrapper split-layout">
+                <div class="split-left">
+                    <h2 class="section-title">TECH STACK</h2>
+                </div>
+                <div class="split-right stack-container">
+                    <span class="stack-pill">PYTHON</span>
+                    <span class="stack-pill">CURSES</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-details reveal" id="installation">
+            <div class="content-wrapper">
+                <div class="editorial-header">
+                    <h2 class="section-title">INSTALLATION</h2>
+                </div>
+                
+                <div class="installation-box">
+                    <div class="os-toggle-container">
+                        <div class="os-toggle" aria-label="Operating System Selection" role="group">
+                            <button class="os-btn active" data-os="unix" aria-pressed="true">Linux / macOS</button>
+                            <button class="os-btn" data-os="arch" aria-pressed="false">Arch Linux</button>
+                        </div>
+                    </div>
+                    
+                    <div class="code-block-wrapper">
+                        <button class="copy-btn" id="copy-btn" aria-label="Copy installation commands to clipboard">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <pre class="code-block"><code id="install-code">git clone https://github.com/HexaProgrammer/HexaMorse.git
+cd HexaMorse
+python main.py</code></pre>
+                    </div>
+                    
+                    <p class="editorial-text mt-2 environment-note">
+                        Requires Python 3.x. The <code class="inline-code">curses</code> library is natively included with Python on Linux and macOS environments. No root privileges or virtual environments are required for execution.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-final-cta reveal">
+            <div class="cta-container">
+                <span class="stack-pill cta-pill">OPEN SOURCE</span>
+                <h2 class="display-text final-text">TAP.<br>DECODE.<br>REPEAT.</h2>
+                <a href="https://github.com/HexaProgrammer/HexaMorse" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">View on GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="project-footer">
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Hexa-Programmer. All Rights Reserved. Made with ❤️ by Hexa-Programmer</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
